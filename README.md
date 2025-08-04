@@ -1,8 +1,8 @@
 Titanic Dataset - Data Cleaning & Preprocessing
-📌 Objective
+Objective
 This project demonstrates data cleaning and preprocessing techniques on the Titanic dataset to prepare it for machine learning models.
 
-✅ Steps Performed
+ Steps Performed
 Imported Dataset & Explored Data
 
 Checked data types, shape, null values.
@@ -66,6 +66,7 @@ Titanic Dataset: Kaggle Link
 bash
 Copy
 Edit
+
 # Clone this repository
 git clone https://github.com/your-username/titanic-preprocessing.git
 
