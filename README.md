@@ -1,76 +1,60 @@
-Titanic Dataset - Data Cleaning & Preprocessing
-Objective
-This project demonstrates data cleaning and preprocessing techniques on the Titanic dataset to prepare it for machine learning models.
+# Titanic Dataset - Data Cleaning & Preprocessing
 
- Steps Performed
-Imported Dataset & Explored Data
+### 📌 Objective
+This project demonstrates how to clean and preprocess raw data for machine learning models using the Titanic dataset.
 
-Checked data types, shape, null values.
+---
 
-Generated descriptive statistics.
+### ✅ Steps Performed
+1. **Data Loading & Exploration**
+   - Loaded Titanic dataset from Kaggle.
+   - Checked data types, null values, and statistics.
 
-Handled Missing Values
+2. **Handling Missing Values**
+   - Filled `Age` with **median**.
+   - Filled `Embarked` with **mode**.
+   - Dropped `Cabin` due to too many missing values.
 
-Age → Filled with median.
+3. **Encoding Categorical Variables**
+   - Converted `Sex` using **Label Encoding**.
+   - Applied **One-Hot Encoding** for `Embarked`.
 
-Embarked → Filled with mode.
+4. **Feature Scaling**
+   - Standardized `Age` and `Fare` using **StandardScaler**.
 
-Dropped Cabin column (too many missing values).
+5. **Outlier Detection & Removal**
+   - Used **IQR method** for `Age` and `Fare`.
+   - Visualized using boxplots.
 
-Encoded Categorical Variables
+6. **Visualization**
+   - Correlation heatmap and boxplots using Seaborn.
 
-Converted Sex using Label Encoding.
+7. **Saved Cleaned Dataset**
+   - Exported final dataset as `titanic_cleaned.csv`.
 
-Applied One-Hot Encoding for Embarked.
+---
 
-Feature Scaling
+### 🛠 Tools & Libraries
+- Python 3
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-Standardized numerical features (Age, Fare) using StandardScaler.
+---
 
-Outlier Detection & Removal
+### 📊 Dataset
+- [Titanic Dataset on Kaggle](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 
-Used IQR method for Age and Fare.
+---
 
-Visualized with Boxplots.
-
-Visualizations
-
-Boxplots for outlier detection.
-
-Correlation heatmap using Seaborn.
-
-Saved Cleaned Dataset
-
-Final cleaned data exported to titanic_cleaned.csv.
-
-🛠 Tools & Libraries
-Python 3
-
-Pandas, NumPy
-
-Matplotlib, Seaborn
-
-Scikit-learn
-
-📂 Files in this Repository
-titanic_preprocessing.ipynb → Main notebook with code & explanations.
-
-titanic_cleaned.csv → Cleaned dataset.
-
-README.md → Project overview and steps.
-
-📊 Dataset
-Titanic Dataset: Kaggle Link https://www.kaggle.com/datasets/yasserh/titanic-dataset
-
-🚀 How to Run
-bash
-Copy
-Edit
-
-# Clone this repository
+### 🚀 How to Run
+```bash
+# Clone the repository
 git clone https://github.com/your-username/titanic-preprocessing.git
 
-# Navigate to folder
+# Navigate to the folder
 cd titanic-preprocessing
 
 # Install dependencies
@@ -78,3 +62,12 @@ pip install -r requirements.txt
 
 # Run Jupyter Notebook
 jupyter notebook titanic_preprocessing.ipynb
+```
+
+---
+
+### 📂 Files
+- `titanic_preprocessing.ipynb` → Notebook with code and explanations.
+- `titanic_cleaned.csv` → Cleaned dataset (generated after running notebook).
+- `requirements.txt` → Required Python libraries.
+- `README.md` → Project overview.
