@@ -60,7 +60,7 @@ titanic_cleaned.csv → Cleaned dataset.
 README.md → Project overview and steps.
 
 📊 Dataset
-Titanic Dataset: Kaggle Link
+Titanic Dataset: Kaggle Link https://www.kaggle.com/datasets/yasserh/titanic-dataset
 
 🚀 How to Run
 bash
